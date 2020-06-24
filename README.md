@@ -5,8 +5,6 @@ for installation:
 - gulp build
 - gulp (to run on http://localhost:3000)
 
-This is responsive form
-
 Used:
 1) preprocessor SCSS.
 2) preprocessor Pug.
