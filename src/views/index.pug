@@ -1,0 +1,58 @@
+doctype html
+html(lang='en')
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css")
+        link(rel="stylesheet" href="css/style.min.css")
+    body
+        header
+            nav.navigation
+                include ../images/burger.svg
+                ul.navigation__list
+                    li.navigation__item
+                        a.navigation__link(href="#rooms") Rooms
+                    li.navigation__item
+                        a.navigation__link(href="#booking") Booking
+                    li.navigation__item
+                        a.navigation__link(href="#contacts") Contacts
+            a(href="#")
+                include ../images/logo.svg
+            .info-block
+                span.phone +43 660 605 0000
+                span.image-container
+                    include ../images/shopping-bag.svg
+                    div.item-number
+                        include ../images/desc.svg
+                        span 2
+                .language
+                    .language_disabled DE
+                    .language_unabled EN
+        section.card-wrapper
+            .card.card_first
+                .text-wrapper
+                    .text_big Da Vinci
+                    .text_small Mystery
+            .card.card_second
+                .text-wrapper
+                    .text_big Mission Belvedere
+                    .text_small Action
+            .card.card_third
+                .text-wrapper
+                    .text_big School of magic
+                    .text_small Adventure
+                .discount
+                    .off 20% off
+                    .time-block
+                        .time-block_small-text Limited-time Deal
+                        .time-block_time 03:34:12
+            .card.card_forth
+                .text-wrapper
+                    .text_big The Unknown
+                    .text_small Horror with live actor
+                        include ../images/horror-icon.svg
+            .card.card_fifth
+                .text-wrapper
+                    .text_big The Nun
+                    .text_small Horror with live actor
+                        include ../images/horror-icon.svg
+
